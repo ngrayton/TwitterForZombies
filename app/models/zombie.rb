@@ -1,4 +1,5 @@
 class Zombie < ActiveRecord::Base
+  audited
   before_destroy :set_deleted
   
   def set_deleted

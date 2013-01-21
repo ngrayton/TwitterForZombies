@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Auditable:</b>
+  <%= @audit.auditable_id %>
+</p>
+
+<p>
+  <b>Auditable type:</b>
+  <%= @audit.auditable_type %>
+</p>
+
+<p>
+  <b>Associated:</b>
+  <%= @audit.associated_id %>
+</p>
+
+<p>
+  <b>Associated type:</b>
+  <%= @audit.associated_type %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @audit.user_id %>
+</p>
+
+<p>
+  <b>User type:</b>
+  <%= @audit.user_type %>
+</p>
+
+<p>
+  <b>Username:</b>
+  <%= @audit.username %>
+</p>
+
+<p>
+  <b>Action:</b>
+  <%= @audit.action %>
+</p>
+
+<p>
+  <b>Audited changes:</b>
+  <%= @audit.audited_changes %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @audit.version %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @audit.comment %>
+</p>
+
+<p>
+  <b>Remote address:</b>
+  <%= @audit.remote_address %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @audit.created_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_audit_path(@audit) %> |
+<%= link_to 'Back', audits_path %>

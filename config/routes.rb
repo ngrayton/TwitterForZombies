@@ -1,4 +1,6 @@
 TwitterForZombies::Application.routes.draw do
+  resources :audits
+
   resources :zombies
 
   # The priority is based upon order of creation:
