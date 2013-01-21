@@ -15,6 +15,11 @@
   <%= @zombie.age %>
 </p>
 
+<p>
+  <b>Deleted:</b>
+  <%= @zombie.deleted %>
+</p>
+
 
 <%= link_to 'Edit', edit_zombie_path(@zombie) %> |
 <%= link_to 'Back', zombies_path %>

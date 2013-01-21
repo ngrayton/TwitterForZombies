@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130113125106) do
+ActiveRecord::Schema.define(:version => 20130121132151) do
 
   create_table "zombies", :force => true do |t|
     t.string   "name"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20130113125106) do
     t.string   "email"
     t.boolean  "rotting",    :default => false
     t.integer  "age"
+    t.boolean  "deleted",    :default => false
   end
 
 end

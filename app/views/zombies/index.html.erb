@@ -5,6 +5,7 @@
     <th>Name</th>
     <th>Bio</th>
     <th>Age</th>
+    <th>Deleted</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,6 +16,7 @@
     <td><%= zombie.name %></td>
     <td><%= zombie.bio %></td>
     <td><%= zombie.age %></td>
+    <td><%= zombie.deleted %></td>
     <td><%= link_to 'Show', zombie %></td>
     <td><%= link_to 'Edit', edit_zombie_path(zombie) %></td>
     <td><%= link_to 'Destroy', zombie, confirm: 'Are you sure?', method: :delete %></td>
