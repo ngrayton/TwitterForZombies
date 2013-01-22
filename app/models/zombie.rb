@@ -1,4 +1,5 @@
 class Zombie < ActiveRecord::Base
+  attr_accessible :name, :bio, :age, :deleted
   audited
   before_destroy :set_deleted
   
